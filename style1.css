@@ -1,6 +1,6 @@
 html body{
- background-color: #0e0b0b;
- cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.75" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill: %23181a1b; --darkreader-inline-stroke: %23e8e6e3;"></path></svg>'), auto;
+ background-color: rgb(151, 70, 189);
+ cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.75" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill: %23181a1b; --darkreader-inline-stroke: %23e8e6e3;"></path></svg>'), auto;
  margin: 0;
  padding: 0;
  height: 100%;
@@ -13,27 +13,47 @@ html body{
     flex-direction: column;
     text-align: center;
 }
+.gradient-background {
+    /* margin-top: 50px; */
+    height: 55vh;
+    background: linear-gradient(-45deg, #184452, #361034, #160f16, #807786);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    margin-top: 0rem;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 
-.img1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
+/* .peace{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+} */
 
 .peace{
     display: flex;
     height: 40vh;
     cursor: pointer;
     transition: opacity 0.5s;
-    margin-bottom: 50px;
+    
 }
 .peace:hover{
     opacity: 0.7;
 }
 
-.text1{
+h3.text1{
     color: rgb(230, 224, 224);
     border-radius: 14px;
     background-color: #130c0c;
@@ -55,13 +75,13 @@ html body{
 
 
 
-.text1:hover{
+h3.text1:hover{
     background-color: rgb(230, 224, 224);
     color: #130c0c;
     opacity: 0.9;
-    box-shadow: 4px 4px 14px rgb(36, 38, 199);
+    box-shadow: 4px 4px 14px rgb(235, 185, 59);
 }
-.text1:active{
+h3.text1:active{
     opacity: 0.7;
 }
 
@@ -70,5 +90,7 @@ html body{
     color: white;
     font-size: 30px;
 }
-      
+.navbar{
+    background-color: rgb(151, 70, 189) !important;
+}   
       
