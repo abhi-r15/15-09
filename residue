@@ -1,0 +1,156 @@
+<section class="first part gradient-background mt-5" >
+        <div class="container">
+            <div id="main">
+                <div class="hint">
+                    <div class="img1">
+                        <img  class="peace" src="./assets/images/peace.png"/>
+                    </div>
+                    <h3 class="text1" >Your hint is over here</h3> 
+                    <P class="japhint">生年月日を追加し、その後にあなたの名前を入力してプレゼントを入手してください</P>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+
+<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+<button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+
+
+
+
+carousel wala
+<section class="carousel">
+  <div class="container" style="max-width: 800px;">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/images/i.jpg" class="d-block w-100 carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/love.jpg" class="d-block w-100 carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/you.jpg" class="d-block w-100 carousel-img" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .carousel-img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-img {
+      max-height: 250px;
+    }
+  }
+</style>
+
+for the toggle button
+/* Styling the Toggle Button */
+button.btn-primary {
+    background-color: transparent; /* Purple background to match the theme */
+    border: none; /* Border to blend with the gradient background */
+    color: rgb(38, 31, 31); /* Text color to match your design */
+    font-family: "Gloria Hallelujah", cursive; /* Matching font */
+    font-size: 1.2rem; /* Adjust font size */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border-radius: 12px; /* Rounded corners */
+    transition:background-color 1s, border 1s;
+}
+
+button.btn-primary:hover {
+    background-color: #271f1f; /* Darker shade on hover */
+    
+}
+
+button.btn-primary:active {
+    background-color: #383523; /* Even darker on active */
+    opacity: 0.9;
+}
+
+/* Styling the Collapse Content */
+.collapse .card.card-body {
+    background-color: #151310 !important; /* Dark background to fit with the theme */
+    color: #e1c7c7 !important; /* Light text color for readability */
+    font-family: "Gloria Hallelujah", cursive; /* Matching font */
+    border:none; /* Matching border */
+    border-radius: 12px !important; /* Rounded corners */
+    padding: 1rem; /* Adjust padding */
+    transition: background-color 1s, color 1s;
+}
+
+/* Optional: Add shadow for a slight pop effect */
+.collapse .card.card-body {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.collapse .card.card-body:hover {
+    background-color: #383523; /* Slight color change on hover */
+    color: #e1c7c7; /* Keep text color consistent */
+}
+
+<i class="fa fa-search"></i>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+button.sumbitbutton {
+    display: flex;
+    background: #8c52ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-left: 300px!important; /* Add margin to separate the button from the input */
+    margin-bottom: 60px !important;
+    
+}
+
+<section class="inputpass">
+  <div class="container">
+    <form onsumbit="cheackPasscode(event)">
+      <input type="search" class="secretInput" placeholder="Enter the pass">
+      <i class="fa fa-search"></i>
+      <button class="sumbitbutton" type="button">Submit</button>
+    </form>
+   </div>
+</section>
+
+<script src="script1.js" defer></script> 
+
+button.sumbitbutton {
+  display: flex;
+  background: #ad85fe;
+  color: white !important;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-left: 200px!important; /* Add margin to separate the button from the input */
+  margin-bottom: 60px !important;
+  text-decoration: none !important;
+  
+}

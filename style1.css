@@ -1,10 +1,11 @@
 html body{
  /* background-color: rgba(200, 161, 211, 0.784); */
- background-color: rgba(192, 172, 152, 0.784);
+ /* background-color: rgba(168, 150, 131, 0.784); */
+ background-color: rgba(226, 179, 147, 0.784);
  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.75" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill: %23181a1b; --darkreader-inline-stroke: %23e8e6e3;"></path></svg>'), auto;
  margin: 0;
  padding: 0;
- height: 100vh;
+ height: 100%;
 }
 /* #main {
     display: flex;
@@ -17,7 +18,7 @@ html body{
 .gradient-background {
     /* margin-top: 50px; */
     height: 50vh;
-    background: linear-gradient(-250deg, #652c2c, #7c3936, #af62af, #151310, beige);
+    background: linear-gradient(-250deg, #7f5938, #5f5a5a, #383523, #151310, beige);
     background-size: 400% 400%;
     animation: gradient-animation 10s ease infinite;
     margin-top: 0rem;
@@ -89,19 +90,16 @@ h3.text1:active{
     font-size: 30px;
 }
 .navbar{
-    background-color: rgba(192, 172, 152, 0.784) !important;
+    background-color: rgba(226, 179, 147, 0.784) !important;
 }
-.dropdown-item{
-    background-color: rgba(192, 172, 152, 0.784)!important;
-    height: fit-content !important;
-}
+
 .heartcall{
     padding-bottom: 3px;
     padding-right: 4px;
     height: 1.8rem;
 }
 .navbar-brand{
-        /* padding-left: 2px; */
+        
         font-family: "Pacifico", cursive;
         font-weight: 400;
         font-style: normal;
@@ -112,17 +110,20 @@ h3.text1:active{
 }
 .text2{
     color: rgb(229, 230, 199) !important;
-    font-family: "Pacifico", cursive !important;
+    font-family: "Gloria Hallelujah", cursive !important;
     font-style: normal !important;
     font-size: 2.5rem;
+    padding-bottom: 2rem !important;
 }
 .copyright{
     color: aliceblue !important;
-    font-family: "Pacifico", cursive;
+    font-family: "Gloria Hallelujah", cursive;
     font-size: 1.4rem;
+    margin: 0; 
+    
 }
 .inputpass{
-    height: 24vh;
+    height: 5vh;
 }
 
 form{
@@ -139,10 +140,11 @@ form{
     border: 4px solid white;
     padding: 5px;
     margin-top: 30px;
+   
 }
 
 input{
-    position: absolute;
+    
     top: 0;
     left: 0;
     width: 100%;;
@@ -181,7 +183,7 @@ form:hover input{
 }
 
 form:hover .fa{
-    background: #8c52ff;
+    background: #ad85fe;
     color: rgb(225, 199, 199);
 }
 input[type="search"] {
@@ -189,10 +191,94 @@ input[type="search"] {
     font-size: 16px; 
 }
 
-/* Style the placeholder text */
+
 input[type="search"]::placeholder {
     font-family: "Gloria Hallelujah", cursive;
     color: #737171; 
     font-size: 16px; 
     opacity: 1.7; 
 }
+
+
+section > .gradient-background .footer {
+    height: 20vh !important;
+   
+    
+}
+.slide{
+    height: 60vh;
+    margin-top: 10vh;
+}
+.carousel-item{
+    height: 25rem;
+    object-fit: contain;
+    max-height: fit-content;
+}
+
+/* Styling the Toggle Button */
+button.btn-primary {
+    background-color: transparent; /* Purple background to match the theme */
+    border: none; /* Border to blend with the gradient background */
+    color: rgb(38, 31, 31); /* Text color to match your design */
+    font-family: "Gloria Hallelujah", cursive; /* Matching font */
+    font-size: 1.2rem; /* Adjust font size */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border-radius: 12px; /* Rounded corners */
+    transition:background-color 1s, border 1s;
+}
+
+button.btn-primary:hover {
+    background-color: #271f1f; /* Darker shade on hover */
+    
+}
+
+button.btn-primary:active {
+    background-color: #383523; /* Even darker on active */
+    opacity: 0.9;
+}
+
+/* Styling the Collapse Content */
+.collapse .card.card-body {
+    background-color: #151310 !important; /* Dark background to fit with the theme */
+    color: #e1c7c7 !important; /* Light text color for readability */
+    font-family: "Gloria Hallelujah", cursive; /* Matching font */
+    border:none; /* Matching border */
+    border-radius: 12px !important; /* Rounded corners */
+    padding: 1rem; /* Adjust padding */
+    transition: background-color 1s, color 1s;
+}
+
+/* Optional: Add shadow for a slight pop effect */
+.collapse .card.card-body {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.collapse .card.card-body:hover {
+    background-color: #383523; /* Slight color change on hover */
+    color: #e1c7c7; /* Keep text color consistent */
+}
+.sumbitbutton {
+    display: absolute;
+    background: #ad85fe;
+    color: white !important;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-left: 200px!important; /* Add margin to separate the button from the input */
+    margin-bottom: 60px !important;
+    text-decoration: none !important;
+    justify-content: center;
+    align-items: center;
+    
+}
+.submitbutton:hover{
+    background-color: #8d79b5 !important;
+    color: #737171 !important;
+}
+
+
+
+
