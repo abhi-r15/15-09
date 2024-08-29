@@ -81,14 +81,36 @@
 </section>
 <section class="inputpass">
   <div class="container">
-    <form >
+    <div class="this">
       <input type="search" id="secretInput" placeholder="Enter the pass bbg" name="secretInput"><img src="./assets/svg/arrow-through-heart.svg"
-      <i class="fa fa-search"></i>
-      <a class="btn btn-primary sumbitbutton" href="./2ndpage.html" role="button">Submit</a>
-    </form>
+      <i class="fa fas-search"></i>
+      <!-- <a class="btn btn-primary sumbitbutton" href="./2ndpage.html" role="button">Submit</a> -->
+      <button class="sumbitbutton" type="button" onclick="checkPasscode()">Submit</button>
     
+      
     </div>
-   
+      <!-- <a class="btn btn-primary sumbitbutton" href="./2ndpage.html" role="button">Submit</a> static button -->
+    
+    
+  </div>
+    
+     
+    
+  
+</section>
+<script>
+  function checkPasscode() {
+    
+    const input = document.getElementById("secretInput").value;
+    const secret = "25reeya"; // The correct string
+
+    if (input === secret) {
+      window.location.href = "./2ndpage.html"; // The URL of the next page
+    } else {
+      alert("Incorrect response");
+    }
+  }
+</script>
   </div>
 </section>
 

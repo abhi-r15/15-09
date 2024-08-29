@@ -6,6 +6,7 @@ html body{
  margin: 0;
  padding: 0;
  height: 100%;
+ 
 }
 /* #main {
     display: flex;
@@ -124,9 +125,10 @@ h3.text1:active{
 }
 .inputpass{
     height: 5vh;
+    
 }
 
-form{
+.this{
     position: relative;
     top: 60%;
     left: 50%;
@@ -173,16 +175,16 @@ input{
     transition: all 1s;
 }
 
-form:hover{
+.this:hover{
     width: 300px;
     cursor: pointer;
 }
 
-form:hover input{
+.this:hover input{
     display: block;
 }
 
-form:hover .fa{
+.this:hover .fa{
     background: #ad85fe;
     color: rgb(225, 199, 199);
 }
@@ -278,7 +280,37 @@ button.btn-primary:active {
     background-color: #8d79b5 !important;
     color: #737171 !important;
 }
+.box1{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    transition: width 0.8s ease-in-out;
+    width: 50px; /* Initial width of the search bar */
+    overflow: hidden;
+}
+.box1:hover {
+    width: 300px;
 
+}
+.box1 input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    display: block;
+}
+.box1 a .fas{
+    color: #ad85fe !important;
+    font-size: 18px;
 
-
-
+}
+.hint1{
+    padding-top: 10px;
+}
