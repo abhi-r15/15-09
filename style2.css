@@ -1,0 +1,87 @@
+html body{
+    /* background-color: rgba(200, 161, 211, 0.784); */
+    /* background-color: rgba(168, 150, 131, 0.784); */
+    background-color: rgb(237, 186, 145);
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.75" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill: %23181a1b; --darkreader-inline-stroke: %23e8e6e3;"></path></svg>'), auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+   }
+.navbar{
+    background-color: rgb(255, 241, 163) !important;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    
+}
+.navbar-brand{
+        
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heartcall{
+    padding-bottom: 3px;
+    padding-right: 4px;
+    height: 1.8rem;
+}
+section.birthday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+img.dogocat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    float: left;
+}
+
+.wish{
+    font-family: "Pacifico", cursive;
+    margin-top: 3rem;
+    
+    padding-top: 3rem;
+}
+/* .msg{
+    margin-left: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.msg {
+    margin-left: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the text to fill the remaining space */
+}
+.smily {
+    text-align: center; /* Center the container */
+    margin-top: 2rem;
+}
+.smilyr{
+    height: 8rem;
+}
+.autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: veiw();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

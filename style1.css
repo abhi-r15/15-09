@@ -92,6 +92,7 @@ h3.text1:active{
 }
 .navbar{
     background-color: rgba(226, 179, 147, 0.784) !important;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
 }
 
 .heartcall{
@@ -142,7 +143,7 @@ h3.text1:active{
     border: 4px solid white;
     padding: 5px;
     margin-top: 30px;
-   
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
 }
 
 input{
@@ -274,7 +275,7 @@ button.btn-primary:active {
     text-decoration: none !important;
     justify-content: center;
     align-items: center;
-    
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
 }
 .submitbutton:hover{
     background-color: #8d79b5 !important;
@@ -292,24 +293,6 @@ button.btn-primary:active {
     transition: width 0.8s ease-in-out;
     width: 50px; /* Initial width of the search bar */
     overflow: hidden;
-}
-.box1:hover {
-    width: 300px;
-
-}
-.box1 input{
-    width: 100%;
-    outline: none;
-    border: none;
-    font-weight: 500;
-    transition: 0.8s;
-    background: transparent;
-    display: block;
-}
-.box1 a .fas{
-    color: #ad85fe !important;
-    font-size: 18px;
-
 }
 .hint1{
     padding-top: 10px;

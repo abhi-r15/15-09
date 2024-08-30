@@ -154,3 +154,33 @@ button.sumbitbutton {
   text-decoration: none !important;
   
 }
+
+first search bar
+<form >
+  <input type="search" id="secretInput" placeholder="Enter the pass bbg" name="secretInput"><img src="./assets/svg/arrow-through-heart.svg"
+  <i class="fa fa-search"></i>
+  <a class="btn btn-primary sumbitbutton" href="./2ndpage.html" role="button">Submit</a>
+</form>
+
+
+<div class="box1" >
+  <input type="search" id="secretInput" placeholder="Enter the pass bbg" name="secretInput"><img src="./assets/svg/arrow-through-heart.svg"
+  <i class="fa fa-search"></i>
+  <a class="btn btn-primary sumbitbutton" href="./2ndpage.html" role="button">Submit</a>
+</div>
+
+
+2nd page 
+@media (max-width: 768px) {
+  .peace {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 27vh;
+  }
+@media (min-width: 1024px) and (max-width: 1440px){
+  section.carousel{
+    width: 40vh !important;
+  }
+}
+}
