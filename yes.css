@@ -1,0 +1,150 @@
+html body{
+    /* background-color: rgba(200, 161, 211, 0.784); */
+    /* background-color: rgba(168, 150, 131, 0.784); */
+    background-color: rgba(169, 255, 143, 0.784);
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.75" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill: %23181a1b; --darkreader-inline-stroke: %23e8e6e3;"></path></svg>'), auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+   .navbar{
+    background-color: rgb(255, 255, 159) !important;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    
+}
+.navbar-brand{
+        
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  .header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .certificate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.certwrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.certimage {
+    
+    height: auto;
+    margin: 0 auto;
+    /* Optional: Add some border or shadow for better visibility */
+    /* border: 2px solid #000; */
+    /* box-shadow: 0px 4px 6px rgba(0,0,0,0.1); */
+}
+
+.cert_text {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    /* Optional: Adjust font family if needed */
+    font-family: 'Libre Baskerville', serif;
+}
+
+@media (min-width: 768px) {
+    .certwrap {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .certimage {
+        width: 100vh;
+        padding-left: 20rem;
+        height: auto;
+        margin-right: 20px; /* Add some spacing between the image and text */
+    }
+    .cert_text {
+        max-width: 50%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .certimage {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+    .cert_text {
+        max-width: 90%;
+    }
+}
+
+h2{
+    font-family:"Gloria Hallelujah", cursive;
+    font-size:xx-large;
+
+}
+.header_text{
+  font-family:"Gloria Hallelujah", cursive;
+    font-size:xx-large;
+    color: #333;
+}
+.gradient-background {
+    /* margin-top: 50px; */
+    
+    background: linear-gradient(-250deg, #f3be90, #ed5050, #f6de5a, #78c7ce, rgb(108, 108, 46));
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    margin-top: 0rem;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .para2{
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+  }
+  .next{
+    color: #333;
+  }
+  a{
+    text-decoration: none;
+  }
+  .next:hover{
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    transition: box-shadow 0.5s;
+  }
+  

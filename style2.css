@@ -6,7 +6,7 @@ html body{
     margin: 0;
     padding: 0;
     height: 100%;
-    
+    scroll-behavior: smooth;
    }
 .navbar{
     background-color: rgb(255, 241, 163) !important;
@@ -48,7 +48,7 @@ img.dogocat{
 .wish{
     font-family: "Pacifico", cursive;
     margin-top: 3rem;
-    
+    font-size: xx-large;
     padding-top: 3rem;
 }
 /* .msg{
@@ -72,10 +72,11 @@ img.dogocat{
 }
 .smilyr{
     height: 8rem;
+    margin-top: 4rem;
 }
 .autoRotate{
     animation: autoRotateAnimation;
-    animation-timeline: veiw();
+    animation-timeline: view();
 }
 @keyframes autoRotateAnimation{
     from{
@@ -84,4 +85,61 @@ img.dogocat{
     to{
         transform: rotate(360deg);
     }
+}
+.para1{
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.para2{
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: x-large;
+}
+.gradient-background {
+    /* margin-top: 50px; */
+    
+    background: linear-gradient(-250deg, #f3be90, #ed5050, #f6de5a, #78c7ce, rgb(108, 108, 46));
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    margin-top: 0rem;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.nextpage{
+    color: black !important;
+    border: none;
+    background: none !important;
+    border-radius: 15px;
+}
+.nextpage:hover{
+    cursor: pointer;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
 }
