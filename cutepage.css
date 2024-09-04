@@ -41,6 +41,8 @@ html body{
     align-items: center;
     height: 80vh; /* Make the container take most of the viewport height */
     text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .kissi1 {
@@ -55,4 +57,33 @@ html body{
     height: auto;
     object-fit: contain;
     /* Ensures that the image maintains its aspect ratio */
+}
+.title1{
+    font-family: "Pacifico", cursive;
+    font-size: 6vh;
+    margin-top: 2.4rem;
+}
+.r1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 320px) and (max-height: 568px) {
+    .responsive-img {
+        max-width: 80%; /* Adjust size for very small screens */
+    }
+    .title1 {
+        font-size: 9vh; /* Smaller font size for small screens */
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 736px) {
+    .responsive-img {
+        max-width: 70%; /* Adjust size for larger small screens */
+    }
+    .title1 {
+        font-size: 9vh; /* Adjust font size for slightly larger screens */
+    }
 }
