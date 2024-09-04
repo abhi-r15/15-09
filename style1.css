@@ -297,3 +297,6 @@ button.btn-primary:active {
 .hint1{
     padding-top: 10px;
 }
+.submit{
+    padding-left: 2rem;
+}
