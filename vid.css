@@ -1,7 +1,7 @@
 html body{
     /* background-color: rgba(200, 161, 211, 0.784); */
     /* background-color: rgba(168, 150, 131, 0.784); */
-    background-color: #ffffff;
+    background-color: #0d0808;
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.75" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill: %23181a1b; --darkreader-inline-stroke: %23e8e6e3;"></path></svg>'), auto;
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ html body{
     z-index: -1;
 }
 
-.background-video {
+#background-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,4 +77,75 @@ html body{
     object-fit: contain;
     padding-left: 60px;
     /* Ensures that the image maintains its aspect ratio */
+}
+h1{
+    color:#f58d8d;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 2em;  */
+        text-align: center;
+        /* width: 100%; */
+        overflow: hidden;
+        margin-bottom: 0;
+        
+        /* padding-top: ; */
+        font-family: "Gloria Hallelujah", cursive;
+        font-size: 7vh;
+        /* line-height: 1.2; */
+        /* overflow: visible;  */
+    
+}
+.vid1{
+    color: #f58d8d;
+    font-family: "Nerko One", cursive;
+    font-size: xx-large;
+    text-align: center;
+}
+.hug1{
+    overflow: hidden;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .background-video {
+        min-width: 120%;
+        min-height: 120%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .background-video {
+        min-width: 150%;
+        min-height: 150%;
+    }
+}
+#change-video-button{
+    color: antiquewhite;
+    background-color: black;
+    border: none;
+    font-family: "Nerko One", cursive;
+    font-size: xx-large;
+    text-align: center;
+    overflow: hidden;
+}
+.change{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.click{
+    transition: color 0.5s;
+}
+.click:hover{
+    color: #f58d8d;
+}
+.hidden{
+    opacity: 0;
+    transition: opacity 1s;
+}
+.hidden:hover{
+    opacity: 1;
 }

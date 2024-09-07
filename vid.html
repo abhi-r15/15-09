@@ -31,22 +31,64 @@
     <section class="thebar"></section>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="heartcall" src="./assets/svg/envelope-open-heart.svg" height="25"> Pp's Corner <3</a>
+              <a class="navbar-brand" href="#"><img class="heartcall" src="./assets/svg/envelope-open-heart.svg" height="25">My Corner <3</a>
               
               
             </div>
           </nav>
     </section>
 
+<div class="container">
     <div class="video-container"></div>
-        <video class="background-video" src="./assets/vids/jars.mp4" autoplay muted loop></video>
-        <video class="background-video" src="./assets/vids/kiss.mp4" autoplay muted loop style="display: none;"></video>
-        <video class="background-video" src="./assets/vids/pyari.mp4" autoplay muted loop style="display: none;"></video>
+        <video id="background-video" src="./assets/vids/jars.mp4" autoplay muted loop></video>
+        <video id="background-video" src="./assets/vids/kiss.mp4" autoplay muted loop style="display: none;"></video>
+        <video id="background-video" src="./assets/vids/pyari.mp4" autoplay muted loop style="display: none;"></video>
     </div>
+</div>
+
+<section class="content">
+    <div class="hug">
+        <img class="dakiimg" src="./assets/stickies/dakishi.png">
+    </div>
+</section>
+
+<section class="hmm">
+    <div class="container">
+        <h1>hmmm(lol)</h1>
+        <p class="vid1">Hanji to yaha maine page bnaya jidhr background pe 3 of my fav vids hai<br/>
+           (sorry bas 3 dal paya ni to 100 hone the ill add more han dw)<br/>
+           You remember this vid na?<br/>
+           Ofc you do , for me yar this was so so special , like han ik you are an artist and talented bhi but for filling some jars you did all of this😭<br/>
+           It made me so happy yar<br/>
+           <span class="love">I love you !!!!</span> <3 sooo much <br/>
+           Thank you for this sweet memory princess<br/>
+           Arey han yad aya this site looks better in mobile(sorry laptop me thoda kam acha dikhta tho laptop mei it has its own cursor dikhaunga wo bhi)
+        </p>
+    </div>
+</section>
+
+<section class="stk">
+    <div class="container stk1">
+        <img class="hug1" src="./assets/stickies/hug1.png">
+    </div>
+</section>
+
+<section class="change1">
+    <div class="container change">
+        <button id="change-video-button"><span class="click">Click to change BG</span><br><span class="hidden">(han click krne k baad upar jana pdega dekhne ko sorry for the inconvinience😭)</span></button>
+    </div>
+</section>
+
+
+
+<script>
+    document.getElementById('change-video-button').addEventListener('click', function() {
+        const videoElement = document.getElementById('background-video');
+        videoElement.src = './assets/vids/kiss.mp4';
+        videoElement.load();
+        videoElement.play();
+    });
+</script>
     
-
-
-
-    <script src="script.js"></script>
 </body>
 </html>

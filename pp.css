@@ -161,3 +161,46 @@ h1{
     object-fit: contain;
     /* Ensures that the image maintains its aspect ratio */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+.changepage {
+    background-color: transparent;
+    border: none;
+    color: antiquewhite;
+    font-family: 'Nerko One', cursive; /* Apply the font */
+    font-size: 40px; /* Adjust the font size */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Make it look like a button */
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.changepage:hover {
+    color: lightcoral; /* Optional: Change color on hover */
+}
+.autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
