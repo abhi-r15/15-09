@@ -1,0 +1,80 @@
+html body{
+    /* background-color: rgba(200, 161, 211, 0.784); */
+    /* background-color: rgba(168, 150, 131, 0.784); */
+    background-color: #ffffff;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.75" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill: %23181a1b; --darkreader-inline-stroke: %23e8e6e3;"></path></svg>'), auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+.navbar{
+    background-color: rgba(122, 244, 244, 0.648) !important;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.navbar-brand{
+    z-index: 1;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    filter: blur(10px); /* Adjust the blur level */
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: -1;
+}
+.content{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh; /* Make the container take most of the viewport height */
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+    
+}
+.hug{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dakiimg{
+    z-index: 1;
+    height: 30rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding-left: 60px;
+    /* Ensures that the image maintains its aspect ratio */
+}
