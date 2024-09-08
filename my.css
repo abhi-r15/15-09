@@ -31,35 +31,216 @@ html body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .bleh{
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    overflow: hidden;
-    padding-right: 20px;
-   
+    overflow-x: hidden;
+    padding-left: 20px;
+    /* height: 40vh; */
     /* Ensures that the image maintains its aspect ratio */
 }
 h1{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    z-index: 10;
+    font-size: 3rem;
     color: white;
     text-align: center;
     margin-top: 3rem;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .han1{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%; /* Ensure container does not exceed viewport width */
 }
 .container {
     max-width: 100%; /* Make sure containers don't exceed viewport width */
+}
+.phool1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%; /* Ensure container does not exceed viewport width */
+}
+.phool{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    overflow-x: hidden;
+    padding-bottom: 20vh;
+    /* height: 40vh; */
+    /* Ensures that the image maintains its aspect ratio */
+}
+.first{
+    font-family: "Itim", cursive;
+    /* font-weight: 400; */
+    font-style: normal;
+    
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    overflow-x: hidden;
+    font-size: xx-large;
+    width: 100%;
+}
+/* .pp{
+    transition: font-size 0.5s;
+}
+.pp:hover{
+    font-size: 3rem;
+} */
+.haye1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%; /* Ensure container does not exceed viewport width */
+}
+.haye{
+    height: 40vh;
+    overflow-x: hidden;
+    width: 100%;
+}
+.dakishimi{
+    height: 40vh;
+    padding-left: 4rem;
+    margin-top: 20px;
+    overflow-x: hidden;
+    width: 100%;
+}
+.head{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    overflow-x: hidden;
+}
+.hug{
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 60px;
+    height: 40vh;
+}
+.heart1{
+    overflow-x: hidden;
+    height: 30vh;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.perfect{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.pls{
+    height: 40vh;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.chats{
+    overflow-x: hidden;
+    height: 75vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.hearthand{
+    overflow-x: hidden;
+    height: 80vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.ritual{
+    overflow-x: hidden;
+    height: 32vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 4px;
+    
+}
+.hug1{
+    overflow-x: hidden;
+    height: 44vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.yes{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    overflow-x: hidden;
+    width: 100%;
+}
+.vid1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    overflow-x: hidden;
+    width: 100%;
+}
+.lol{
+    overflow-x: hidden;
+    height: 39vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+}
+.heartarr{
+    padding-bottom:  10rem;
+    height: 30vh;
+}
+.autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.autoBLur{
+    animation: autoBLurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoBLurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    45%, 55%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
 }
