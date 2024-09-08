@@ -47,7 +47,7 @@ html body{
     width: 100%;
     height: auto;
     transform: translate(-50%, -50%);
-    filter: blur(10px); /* Adjust the blur level */
+    filter: blur(5px); /* Adjust the blur level */
     object-fit: cover; /* Ensures the video covers the entire container */
     z-index: -1;
 }
@@ -148,4 +148,72 @@ h1{
 }
 .hidden:hover{
     opacity: 1;
+}
+.kiss{
+    padding-top: 2rem;
+}
+.vid2r{
+    color: #f58d8d;
+    font-family: "Nerko One", cursive;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 30px;
+}
+.change2{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#change-video-button2{
+    color: antiquewhite;
+    background-color: black;
+    border: none;
+    font-family: "Nerko One", cursive;
+    font-size: xx-large;
+    text-align: center;
+    overflow: hidden;
+}
+.hat{
+    transition: font-size 1s;
+}
+.hat:hover{
+    font-size: 5rem;
+}
+.billo1{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.billo{
+    height: 40vh;
+}
+.autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }

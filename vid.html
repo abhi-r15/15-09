@@ -39,20 +39,20 @@
     </section>
 
 <div class="container">
-    <div class="video-container"></div>
+    <div class="video-container autoShow"></div>
         <video id="background-video" src="./assets/vids/jars.mp4" autoplay muted loop></video>
         <video id="background-video" src="./assets/vids/kiss.mp4" autoplay muted loop style="display: none;"></video>
         <video id="background-video" src="./assets/vids/pyari.mp4" autoplay muted loop style="display: none;"></video>
     </div>
 </div>
 
-<section class="content">
+<section class="content autoShow">
     <div class="hug">
         <img class="dakiimg" src="./assets/stickies/dakishi.png">
     </div>
 </section>
 
-<section class="hmm">
+<section class="hmm autoShow">
     <div class="container">
         <h1>hmmm(lol)</h1>
         <p class="vid1">Hanji to yaha maine page bnaya jidhr background pe 3 of my fav vids hai<br/>
@@ -67,19 +67,66 @@
     </div>
 </section>
 
-<section class="stk">
+<section class="stk autoShow">
     <div class="container stk1">
         <img class="hug1" src="./assets/stickies/hug1.png">
     </div>
 </section>
 
-<section class="change1">
+<section class="change1 autoShow">
     <div class="container change">
         <button id="change-video-button"><span class="click">Click to change BG</span><br><span class="hidden">(han click krne k baad upar jana pdega dekhne ko sorry for the inconvinience😭)</span></button>
     </div>
 </section>
 
+<section class="autoShow ">
+    <div class="container autoRotate">
+        <img class="kisss" src="./assets/stickies/kiss.png">
+    </div>
+</section>
 
+<section class="vid2 autoShow">
+    <div class="container">
+        <p class="vid2r">
+            Han toh hopefully bg change krne ka link click kardiy hoga(ni kra to kar pgl😭)<br/>
+            Kissii<br/>
+            This is one aswell, actually sabhi ke sabhi every vid that you have sent jisme chummi di<br/>
+            Hayeee butterflies yar<br/>
+            I just look at your lips and admire them adore them<br/>
+            Often ask the question itna cute kaise ho skta koi<br/>
+            But the answer is always right infront  of me<br/>
+            My darling 💘<br/>
+        </p>
+    </div>
+</section>
+
+<section class="change2 autoShow">
+    <div class="container change2">
+        <button id="change-video-button2"><span class="click">Click to change BG again</span><br><span class="hidden"></button>
+    </div>
+</section>
+
+<section>
+    <div class="container autoShow">
+        <p class="vid2r">
+            Iske liye ek hi word hai merpe<br/> <span class="hat">Haattttt XD</span>
+        </p>
+    </div>
+</section>
+
+<section class="autoShow">
+    <div class="container billo1">
+        <a href="my.html"><img class="billo" src="./assets/stickies/billo.png"></a>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <p class="vid2r">
+            upar wali billo(you) pe click karrr <3
+        </p>
+    </div>
+</section>
 
 <script>
     document.getElementById('change-video-button').addEventListener('click', function() {
@@ -89,6 +136,18 @@
         videoElement.play();
     });
 </script>
+
+<script>
+    document.getElementById('change-video-button2').addEventListener('click', function() {
+        const videoElement = document.getElementById('background-video');
+        videoElement.src = './assets/vids/hatt.mp4';
+        videoElement.load();
+        videoElement.play();
+    });
+</script>
     
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script1.js" defer></script> 
 </body>
 </html>
