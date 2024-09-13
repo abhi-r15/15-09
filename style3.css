@@ -29,19 +29,21 @@ html body{
     margin-left: 150px;
     transition: 0.5s;
     z-index: 10;
+    overflow: hidden;
   }
   
   #yesButton {
     position: absolute;
     margin-right: 150px;
     z-index: 10;
+    overflow: hidden;
   }
   
   .header_text {
     font-family: "Pacifico", cursive;
     font-size: 40px;
     font-weight: bold;
-    color: rgb(255, 126, 126);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -54,6 +56,7 @@ html body{
     align-items: center;
     margin-top: 20px;
     margin-left: 20px;
+    overflow: hidden;
   }
   
   .btn {
@@ -69,6 +72,7 @@ html body{
     border-radius: 12px;
     transition: background-color 0.3s ease;
     z-index: 10;
+    overflow: hidden;
   }
   
   .gif_container {
@@ -147,3 +151,13 @@ html body{
   .footer2{
     margin-top: 2rem;
   }
+
+  .btn:focus,
+  .btn:active {
+      background-color: #FFB6C1 !important; /* Same color as your button's normal state */
+      color: white !important; /* Ensure text color doesn't change */
+      outline: none; /* Optional: remove focus outline */
+      box-shadow: none; /* Optional: remove shadow on click */
+      overflow-x: hidden;
+  }
+  
