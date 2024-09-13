@@ -131,7 +131,7 @@ h2{
     }
   }
   .para2{
-    font-family: "Kalam", cursive;
+    font-family: "Kalam", cursive !important;
     font-weight: 600;
     font-style: normal;
     font-size: x-large;
@@ -149,7 +149,7 @@ h2{
   }
   .button{
     
-    font-family: "Kalam", cursive;
+    font-family: "Kalam", cursive !important;
     text-align: center;
     padding-top: 50px;
     font-size: xx-large;
